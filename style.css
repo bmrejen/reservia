@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --blue: #0065fc;
+  --lightgrey: #f2f2f2;
+}
+
+/* WILDCARD */
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", "sans-serif";
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 2rem;
+  border-top: 3px solid transparent;
+}
+
+nav a:hover {
+  border-top: 3px solid var(--blue);
+  color: var(--blue);
+}
+
+#logo {
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.signup {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.sub-nav {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .sub-nav {
+    order: 1;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .sub-nav a {
+    flex-basis: 50%;
+    border-bottom: 3px solid var(--lightgrey);
+  }
+
+  .sub-nav a:hover {
+    border-bottom: 3px solid var(--blue);
+    border-top: 3px solid transparent;
+    color: var(--blue);
+  }
+}
