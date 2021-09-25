@@ -1,0 +1,63 @@
+/* ACTIVITES */
+
+.activites-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.activite-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+  max-width: 20rem;
+  min-width: 15rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.activite-card-image {
+  height: 100%;
+}
+
+.activite-card img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.activite-card-child {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.activites-list h4 {
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+.petit {
+  height: 11rem;
+}
+
+.grand {
+  height: 14rem;
+}
+
+.parent {
+  background-color: teal;
+}
+
+@media (max-width: 1200px) {
+  .parent {
+    flex-direction: row;
+  }
+
+  .activites-list > :not(.parent) {
+    background-color: red;
+  }
+}
