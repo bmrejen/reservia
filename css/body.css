@@ -5,8 +5,13 @@
 }
 
 body {
+  margin: 0;
+}
+
+main {
   margin: 0 auto;
   max-width: 1440px;
+  padding: 0 2rem;
 }
 
 a {
@@ -14,11 +19,6 @@ a {
   text-decoration: none;
 }
 
-/* BODY */
-.wrapper {
-  padding: 0 2rem;
-}
-
-.wrapper p {
+main p {
   margin-bottom: 1rem;
 }

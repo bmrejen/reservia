@@ -2,6 +2,7 @@
 .apartments-list {
   display: flex;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .apartments-list > div {
